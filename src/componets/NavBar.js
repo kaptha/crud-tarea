@@ -2,14 +2,14 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import cart from '../images/carrito.png';
+import logouno from '../images/tablets.png'
 export default function NavBar() {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">Best-Tablets</Navbar.Brand>
+        <Navbar.Brand href="#home"><img className="logo" src={logouno}></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -18,9 +18,9 @@ export default function NavBar() {
             
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Contacto</Nav.Link>
+            <Nav.Link href="#deets">Iniciar sesion</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              Carrito de compra
+              <img className="cart-logo" src={cart}></img>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

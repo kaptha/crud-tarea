@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+.cart-logo{
+  width: 35px;
+  height: 35px;
+}
+.logo{
+  width: 90px;
+  height: 40px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
